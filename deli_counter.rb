@@ -17,9 +17,17 @@ puts message
 end
       
 
-def take_a_number(katz_deli, name)
-  katz_deli << name 
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+# def take_a_number(katz_deli, name)
+#   katz_deli << name 
+#   puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+# end
+
+$n = 1
+
+def take_a_number(katz_deli)
+  katz_deli << $n 
+  puts "Welcome customer, you are ticket number #{$n}"
+  $n += 1
 end
 
 def now_serving(katz_deli)
